@@ -1,0 +1,16 @@
+[haproxy_server]
+192.168.122.93
+
+[webservers]
+192.168.122.155
+192.168.122.184
+
+[database]
+192.168.122.99
+
+[all:children]
+haproxy_server
+webservers
+database
+
+
